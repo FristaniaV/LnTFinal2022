@@ -11,7 +11,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="80dp"
-        android:layout_marginTop="70dp"
+        android:layout_marginTop="80dp"
         android:textSize="30sp"
         android:textStyle="bold"
         android:text="Balok"
@@ -74,7 +74,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="80dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="55dp"
         android:textSize="30sp"
         android:textStyle="bold"
         android:text="Piramid"
@@ -82,12 +82,12 @@
         app:layout_constraintTop_toBottomOf="@+id/calculate_balok" />
 
     <EditText
-        android:id="@+id/panjang_alas_piramid"
+        android:id="@+id/sisi_alas_piramid"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:textSize="15sp"
-        android:hint="Panjang Alas Piramid"
+        android:hint="Sisi alas"
         app:layout_constraintStart_toStartOf="@+id/title_piramid"
         app:layout_constraintTop_toBottomOf="@+id/title_piramid" />
 
@@ -95,11 +95,11 @@
         android:id="@+id/tinggi_piramid"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="1dp"
+        android:layout_marginStart="20dp"
         android:textSize="15sp"
         android:hint="Tinggi"
-        app:layout_constraintStart_toStartOf="@+id/panjang_alas_piramid"
-        app:layout_constraintTop_toBottomOf="@+id/panjang_alas_piramid" />
+        app:layout_constraintStart_toEndOf="@+id/sisi_alas_piramid"
+        app:layout_constraintTop_toTopOf="@+id/sisi_alas_piramid" />
 
     <Button
         android:id="@+id/calculate_piramid"
@@ -107,8 +107,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:text="Calculate"
-        app:layout_constraintStart_toStartOf="@+id/tinggi_piramid"
-        app:layout_constraintTop_toBottomOf="@+id/tinggi_piramid" />
+        app:layout_constraintStart_toStartOf="@+id/sisi_alas_piramid"
+        app:layout_constraintTop_toBottomOf="@+id/sisi_alas_piramid" />
 
     <TextView
         android:id="@+id/result_piramid"
@@ -123,46 +123,56 @@
         app:layout_constraintVertical_bias="0.448" />
 
     <TextView
-        android:id="@+id/title_lingkaran"
+        android:id="@+id/title_tabung"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="84dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="55dp"
         android:textSize="30sp"
         android:textStyle="bold"
-        android:text="Lingkaran"
+        android:text="Tabung"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/calculate_piramid" />
 
     <EditText
-        android:id="@+id/jari_lingkaran"
+        android:id="@+id/jari_tabung"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:textSize="15sp"
         android:hint="Jari Jari"
-        app:layout_constraintStart_toStartOf="@+id/title_lingkaran"
-        app:layout_constraintTop_toBottomOf="@+id/title_lingkaran" />
+        app:layout_constraintStart_toStartOf="@+id/title_tabung"
+        app:layout_constraintTop_toBottomOf="@+id/title_tabung" />
+
+    <EditText
+        android:id="@+id/tinggi_tabung"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:textSize="15sp"
+        android:hint="Tinggi"
+        app:layout_constraintStart_toEndOf="@+id/jari_tabung"
+        app:layout_constraintTop_toTopOf="@+id/jari_tabung" />
 
     <Button
-        android:id="@+id/calculate_lingkaran"
+        android:id="@+id/calculate_tabung"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:text="Calculate"
-        app:layout_constraintStart_toStartOf="@+id/jari_lingkaran"
-        app:layout_constraintTop_toBottomOf="@+id/jari_lingkaran" />
+        app:layout_constraintStart_toStartOf="@+id/jari_tabung"
+        app:layout_constraintTop_toBottomOf="@+id/jari_tabung" />
 
     <TextView
-        android:id="@+id/result_lingkaran"
+        android:id="@+id/result_tabung"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="35dp"
         android:textSize="15sp"
         android:text="Result :"
-        app:layout_constraintBottom_toBottomOf="@+id/calculate_lingkaran"
+        app:layout_constraintBottom_toBottomOf="@+id/calculate_tabung"
         app:layout_constraintStart_toEndOf="@+id/calculate_balok"
-        app:layout_constraintTop_toTopOf="@+id/calculate_lingkaran"
+        app:layout_constraintTop_toTopOf="@+id/calculate_tabung"
         app:layout_constraintVertical_bias="0.448" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
