@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AreaActivity">
+
+    <TextView
+        android:id="@+id/title_persegi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="70dp"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:text="Persegi"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/panjang_sisi_persegi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textSize="15sp"
+        android:hint="Panjang Sisi"
+        app:layout_constraintStart_toStartOf="@+id/title_persegi"
+        app:layout_constraintTop_toBottomOf="@+id/title_persegi" />
+
+    <Button
+        android:id="@+id/calculate_persegi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Calculate"
+        app:layout_constraintStart_toStartOf="@+id/panjang_sisi_persegi"
+        app:layout_constraintTop_toBottomOf="@+id/panjang_sisi_persegi" />
+
+    <TextView
+        android:id="@+id/result_persegi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:textSize="15sp"
+        android:text="Result:"
+        app:layout_constraintBottom_toBottomOf="@+id/calculate_persegi"
+        app:layout_constraintStart_toEndOf="@+id/calculate_persegi"
+        app:layout_constraintTop_toTopOf="@+id/calculate_persegi"
+        app:layout_constraintVertical_bias="0.448" />
+
+    <TextView
+        android:id="@+id/title_segitiga"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="40dp"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:text="Segitiga"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/calculate_persegi" />
+
+    <EditText
+        android:id="@+id/panjang_alas_segitiga"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textSize="15sp"
+        android:hint="Panjang Alas Segitiga"
+        app:layout_constraintStart_toStartOf="@+id/title_segitiga"
+        app:layout_constraintTop_toBottomOf="@+id/title_segitiga" />
+
+    <EditText
+        android:id="@+id/tinggi_segitiga"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:textSize="15sp"
+        android:hint="Tinggi"
+        app:layout_constraintStart_toStartOf="@+id/panjang_alas_segitiga"
+        app:layout_constraintTop_toBottomOf="@+id/panjang_alas_segitiga" />
+
+    <Button
+        android:id="@+id/calculate_segitiga"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Calculate"
+        app:layout_constraintStart_toStartOf="@+id/tinggi_segitiga"
+        app:layout_constraintTop_toBottomOf="@+id/tinggi_segitiga" />
+
+    <TextView
+        android:id="@+id/result_segitiga"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:textSize="15sp"
+        android:text="Result:"
+        app:layout_constraintBottom_toBottomOf="@+id/calculate_segitiga"
+        app:layout_constraintStart_toEndOf="@+id/calculate_segitiga"
+        app:layout_constraintTop_toTopOf="@+id/calculate_segitiga"
+        app:layout_constraintVertical_bias="0.448" />
+
+    <TextView
+        android:id="@+id/title_lingkaran"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="40dp"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:text="Lingkaran"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/calculate_segitiga" />
+
+    <EditText
+        android:id="@+id/jari_lingkaran"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textSize="15sp"
+        android:hint="Jari Jari"
+        app:layout_constraintStart_toStartOf="@+id/title_lingkaran"
+        app:layout_constraintTop_toBottomOf="@+id/title_lingkaran" />
+
+    <Button
+        android:id="@+id/calculate_lingkaran"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Calculate"
+        app:layout_constraintStart_toStartOf="@+id/jari_lingkaran"
+        app:layout_constraintTop_toBottomOf="@+id/jari_lingkaran" />
+
+    <TextView
+        android:id="@+id/result_lingkaran"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:textSize="15sp"
+        android:text="Result :"
+        app:layout_constraintBottom_toBottomOf="@+id/calculate_lingkaran"
+        app:layout_constraintStart_toEndOf="@+id/calculate_lingkaran"
+        app:layout_constraintTop_toTopOf="@+id/calculate_lingkaran"
+        app:layout_constraintVertical_bias="0.448" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

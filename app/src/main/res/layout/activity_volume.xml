@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VolumeActivity">
+
+    <TextView
+        android:id="@+id/title_balok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="70dp"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:text="Balok"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/panjang_balok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textSize="15sp"
+        android:hint="Panjang"
+        app:layout_constraintStart_toStartOf="@+id/title_balok"
+        app:layout_constraintTop_toBottomOf="@+id/title_balok" />
+
+    <EditText
+        android:id="@+id/lebar_balok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:textSize="15sp"
+        android:hint="Lebar"
+        app:layout_constraintStart_toEndOf="@+id/panjang_balok"
+        app:layout_constraintTop_toTopOf="@+id/panjang_balok" />
+
+    <EditText
+        android:id="@+id/tinggi_balok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:textSize="15sp"
+        android:hint="Tinggi"
+        app:layout_constraintStart_toEndOf="@+id/lebar_balok"
+        app:layout_constraintTop_toTopOf="@+id/lebar_balok" />
+
+    <Button
+        android:id="@+id/calculate_balok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Calculate"
+        app:layout_constraintStart_toStartOf="@+id/panjang_balok"
+        app:layout_constraintTop_toBottomOf="@+id/panjang_balok" />
+
+    <TextView
+        android:id="@+id/result_balok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:textSize="15sp"
+        android:text="Result:"
+        app:layout_constraintBottom_toBottomOf="@+id/calculate_balok"
+        app:layout_constraintStart_toEndOf="@+id/calculate_balok"
+        app:layout_constraintTop_toTopOf="@+id/calculate_balok"
+        app:layout_constraintVertical_bias="0.448" />
+
+    <TextView
+        android:id="@+id/title_piramid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="40dp"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:text="Piramid"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/calculate_balok" />
+
+    <EditText
+        android:id="@+id/panjang_alas_piramid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textSize="15sp"
+        android:hint="Panjang Alas Piramid"
+        app:layout_constraintStart_toStartOf="@+id/title_piramid"
+        app:layout_constraintTop_toBottomOf="@+id/title_piramid" />
+
+    <EditText
+        android:id="@+id/tinggi_piramid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:textSize="15sp"
+        android:hint="Tinggi"
+        app:layout_constraintStart_toStartOf="@+id/panjang_alas_piramid"
+        app:layout_constraintTop_toBottomOf="@+id/panjang_alas_piramid" />
+
+    <Button
+        android:id="@+id/calculate_piramid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Calculate"
+        app:layout_constraintStart_toStartOf="@+id/tinggi_piramid"
+        app:layout_constraintTop_toBottomOf="@+id/tinggi_piramid" />
+
+    <TextView
+        android:id="@+id/result_piramid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:textSize="15sp"
+        android:text="Result:"
+        app:layout_constraintBottom_toBottomOf="@+id/calculate_piramid"
+        app:layout_constraintStart_toEndOf="@+id/calculate_balok"
+        app:layout_constraintTop_toTopOf="@+id/calculate_piramid"
+        app:layout_constraintVertical_bias="0.448" />
+
+    <TextView
+        android:id="@+id/title_lingkaran"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="40dp"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:text="Lingkaran"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/calculate_piramid" />
+
+    <EditText
+        android:id="@+id/jari_lingkaran"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textSize="15sp"
+        android:hint="Jari Jari"
+        app:layout_constraintStart_toStartOf="@+id/title_lingkaran"
+        app:layout_constraintTop_toBottomOf="@+id/title_lingkaran" />
+
+    <Button
+        android:id="@+id/calculate_lingkaran"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Calculate"
+        app:layout_constraintStart_toStartOf="@+id/jari_lingkaran"
+        app:layout_constraintTop_toBottomOf="@+id/jari_lingkaran" />
+
+    <TextView
+        android:id="@+id/result_lingkaran"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:textSize="15sp"
+        android:text="Result :"
+        app:layout_constraintBottom_toBottomOf="@+id/calculate_lingkaran"
+        app:layout_constraintStart_toEndOf="@+id/calculate_balok"
+        app:layout_constraintTop_toTopOf="@+id/calculate_lingkaran"
+        app:layout_constraintVertical_bias="0.448" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
